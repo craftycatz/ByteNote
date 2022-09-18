@@ -1,4 +1,5 @@
 import { Editor } from "./Editor";
+import { Preview } from "./preview";
 import { useCallback, useState } from "react";
 
 const App: React.FC = () => {
@@ -9,7 +10,10 @@ const App: React.FC = () => {
   }, []);
   return (
     <>
-      <Editor onChange={handleDocChange} initialDoc={doc} />
+      <div className="flex flex-row h-screen w-screen overflow-x-hidden overflow-y-auto">
+        <Editor onChange={handleDocChange} initialDoc={doc} />
+        <Preview doc={doc} />
+      </div>
     </>
   );
 };

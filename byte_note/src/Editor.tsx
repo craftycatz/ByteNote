@@ -25,5 +25,5 @@ export const Editor: React.FC<Props> = (props: Props) => {
     }
   }, [editorView]);
 
-  return <div className="h-screen w-scren" ref={editorRef}></div>;
+  return <div className="h-screen w-full overflow-hidden" ref={editorRef}></div>;
 };

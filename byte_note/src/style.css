@@ -5,3 +5,7 @@
 html {
   @apply bg-black/30;
 }
+
+.markdown-body pre {
+  @apply bg-black/40;
+}
